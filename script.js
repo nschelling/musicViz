@@ -63,8 +63,7 @@ source.onended = function() {
 }
 
   });
-  //audio = $('<audio id="myAudio" src="' + source + '""></audio>');
-  //container.append(audio);
+
   
 }
 
@@ -110,21 +109,16 @@ function setupAudioNodes() {
         centerX = 600;
         centerY = 200;
 
-       ctx.clearRect(0,0,canvasWidth, canvasHeight);
-        //ctx.clearRect(0,0,60,130);
+        ctx.clearRect(0,0,canvasWidth, canvasHeight);
+
         ctx.beginPath();
 
         ctx.arc(centerX, centerY, radius, 0, 2 *Math.PI, false);
         
-        ctx.fillStyle = 'grey';
+        ctx.fillStyle = 'yellow';
         ctx.fill();
-        gradient.addColorStop(0, "grey");
-        gradient.addColorStop(1, "white");
-        ctx.fill();
-        //ctx.fillRect(0,130-average,25,130);
       
 
-        //ctx.globalCompositeOperation = 'destination-out';
 
         }
      }
@@ -155,10 +149,10 @@ function setupAudioNodes() {
 
 $("#textSubmit").click(function(){
   readText =  $("#text").val();
-  //apiURL = "https://montanaflynn-text-to-speech.p.mashape.com/speak?text=" + readText 
-  apiURL = "1984.mp3";
+  apiURL = "https://montanaflynn-text-to-speech.p.mashape.com/speak?text=" + readText 
+  //apiURL = "media/1984.mp3";
   loadSound();
-  //setupAudioNodes();
+  setupAudioNodes();
 
 
 });
