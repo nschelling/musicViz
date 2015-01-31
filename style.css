@@ -1,0 +1,25 @@
+
+html { 
+  background: url(bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+body{
+  text-align: center;
+  width:100%;
+  height: 100%;
+}
+
+#viewport{
+  width: 100%;
+  
+  min-height:640px;
+
+  //margin-top:20px;
+  overflow: hidden;
+
+}
